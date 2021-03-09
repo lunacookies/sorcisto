@@ -36,6 +36,20 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.yellow(),
     );
 
+    builder.add_rules(
+        &[
+            Semantic("type"),
+            Semantic("class"),
+            Semantic("struct"),
+            Semantic("enum"),
+            Semantic("union"),
+            Semantic("typeAlias"),
+            Semantic("interface"),
+            Semantic("typeParameter"),
+        ],
+        palette.light_blue(),
+    );
+
     builder.add_rule(
         Textmate("markup.heading"),
         palette.base(BaseScale::BrightFg),

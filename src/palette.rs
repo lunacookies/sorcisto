@@ -12,6 +12,10 @@ impl Palette {
         oklch(0.75, 0.06, 250.0)
     }
 
+    pub(crate) fn light_blue(&self) -> Oklch {
+        oklch(0.75, 0.0325, 220.0)
+    }
+
     pub(crate) fn purple(&self) -> Oklch {
         oklch(0.65, 0.04, 265.0)
     }
