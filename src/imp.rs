@@ -17,7 +17,19 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
 }
 
 fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
-    builder.add_rules(&[Semantic("keyword"), Semantic("operator")], palette.blue());
+    builder.add_rules(
+        &[Semantic("keyword"), Semantic("builtinType")],
+        palette.purple(),
+    );
+
+    builder.add_rules(
+        &[
+            Semantic("keyword.controlFlow"),
+            Semantic("selfKeyword"),
+            Semantic("operator"),
+        ],
+        palette.blue(),
+    );
 
     builder.add_rule(
         Textmate("markup.heading"),

@@ -10,6 +10,18 @@
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
 		"keyword": {
+			"foreground": "#838FA8",
+			"fontStyle": ""
+		},
+		"builtinType": {
+			"foreground": "#838FA8",
+			"fontStyle": ""
+		},
+		"keyword.controlFlow": {
+			"foreground": "#92B1D3",
+			"fontStyle": ""
+		},
+		"selfKeyword": {
 			"foreground": "#92B1D3",
 			"fontStyle": ""
 		},
