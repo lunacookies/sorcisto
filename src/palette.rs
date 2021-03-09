@@ -19,7 +19,7 @@ impl BaseScale {
     fn lightness(self) -> f32 {
         match self {
             Self::Bg => 0.3,
-            Self::Fg => 0.7,
+            Self::Fg => 0.8,
         }
     }
 }
