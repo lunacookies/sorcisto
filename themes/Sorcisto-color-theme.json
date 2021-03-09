@@ -3,9 +3,9 @@
 	"name": "Sorcisto",
 	"type": "dark",
 	"colors": {
-		"editor.background": "#2E2E2E",
-		"editor.foreground": "#BEBEBD",
-		"foreground": "#BEBEBD"
+		"editor.background": "#222222",
+		"editor.foreground": "#C4C1B3",
+		"foreground": "#C4C1B3"
 	},
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
@@ -22,7 +22,7 @@
 		{
 			"scope": "markup.heading",
 			"settings": {
-				"foreground": "#FFFFFF",
+				"foreground": "#F2EFDC",
 				"fontStyle": ""
 			}
 		}
