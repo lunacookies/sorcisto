@@ -8,7 +8,16 @@
 		"foreground": "#BEBEBD"
 	},
 	"semanticHighlighting": true,
-	"semanticTokenColors": {},
+	"semanticTokenColors": {
+		"keyword": {
+			"foreground": "#92B1D3",
+			"fontStyle": ""
+		},
+		"operator": {
+			"foreground": "#92B1D3",
+			"fontStyle": ""
+		}
+	},
 	"tokenColors": [
 		{
 			"scope": "markup.heading",
