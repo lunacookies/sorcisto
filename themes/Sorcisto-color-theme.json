@@ -9,5 +9,13 @@
 	},
 	"semanticHighlighting": true,
 	"semanticTokenColors": {},
-	"tokenColors": []
+	"tokenColors": [
+		{
+			"scope": "markup.heading",
+			"settings": {
+				"foreground": "#FFFFFF",
+				"fontStyle": ""
+			}
+		}
+	]
 }

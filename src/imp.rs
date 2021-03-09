@@ -16,4 +16,9 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
     );
 }
 
-fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {}
+fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
+    builder.add_rule(
+        Textmate("markup.heading"),
+        palette.base(BaseScale::BrightFg),
+    );
+}
