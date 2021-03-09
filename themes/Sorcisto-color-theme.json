@@ -28,6 +28,14 @@
 		"operator": {
 			"foreground": "#92B1D3",
 			"fontStyle": ""
+		},
+		"function": {
+			"foreground": "#F7F0C2",
+			"fontStyle": ""
+		},
+		"method": {
+			"foreground": "#F7F0C2",
+			"fontStyle": ""
 		}
 	},
 	"tokenColors": [
