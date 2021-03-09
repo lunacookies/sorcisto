@@ -1,0 +1,29 @@
+{
+  "name": "sorcisto",
+  "displayName": "Sorcisto",
+  "description": "A theme based on Apprentice and Sorcerer",
+  "publisher": "arzg",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/arzg/sorcisto"
+  },
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.41.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "scripts": {
+    "package": "vsce package"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Sorcisto",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Sorcisto-color-theme.json"
+      }
+    ]
+  }
+}
