@@ -54,7 +54,7 @@ pub(crate) enum BaseScale {
 
 impl BaseScale {
     fn lightness(self) -> f32 {
-        lerp(self.value(), 0.25..0.95)
+        lerp(self.value(), 0.25..0.99)
     }
 
     fn chroma(self) -> f32 {

@@ -4,8 +4,8 @@
 	"type": "dark",
 	"colors": {
 		"editor.background": "#222222",
-		"editor.foreground": "#C4C2B0",
-		"foreground": "#C4C2B0"
+		"editor.foreground": "#CECCBA",
+		"foreground": "#CECCBA"
 	},
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
@@ -118,7 +118,7 @@
 		{
 			"scope": "markup.heading",
 			"settings": {
-				"foreground": "#F3EFD9",
+				"foreground": "#FFFDE6",
 				"fontStyle": ""
 			}
 		}
