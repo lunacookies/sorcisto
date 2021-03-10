@@ -31,6 +31,11 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
     builder.add_workspace_rule("statusBar.foreground", palette.base(BaseScale::DarkFg));
 
     builder.add_workspace_rule(
+        "editor.selectionBackground",
+        palette.base(BaseScale::LighterBg),
+    );
+
+    builder.add_workspace_rule(
         "rust_analyzer.inlayHints.foreground",
         palette.base(BaseScale::DarkFg),
     );
