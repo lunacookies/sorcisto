@@ -29,7 +29,7 @@ impl Palette {
     }
 
     pub(crate) fn green(&self) -> Oklch {
-        oklch(0.65, 0.075, 140.0)
+        oklch(0.65, 0.06, 140.0)
     }
 
     pub(crate) fn orange(&self) -> Oklch {
