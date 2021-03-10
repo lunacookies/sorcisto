@@ -83,6 +83,15 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
     );
 
     builder.add_rule(
+        Semantic("comment"),
+        (palette.base(BaseScale::BrightFg), FontStyle::Italic),
+    );
+    builder.add_rule(
+        Semantic("comment.documentation"),
+        palette.base(BaseScale::BrightFg),
+    );
+
+    builder.add_rule(
         Textmate("markup.heading"),
         palette.base(BaseScale::BrightFg),
     );

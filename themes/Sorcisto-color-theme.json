@@ -116,6 +116,14 @@
 		"characterLiteral": {
 			"foreground": "#C47D03",
 			"fontStyle": ""
+		},
+		"comment": {
+			"foreground": "#FFFDE6",
+			"italic": true
+		},
+		"comment.documentation": {
+			"foreground": "#FFFDE6",
+			"fontStyle": ""
 		}
 	},
 	"tokenColors": [
