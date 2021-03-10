@@ -62,11 +62,11 @@
 			"fontStyle": ""
 		},
 		"interface": {
-			"foreground": "#8FAAB3",
+			"foreground": "#98A5BE",
 			"fontStyle": ""
 		},
 		"typeParameter": {
-			"foreground": "#8FAAB3",
+			"foreground": "#D8953D",
 			"fontStyle": ""
 		},
 		"enumMember": {

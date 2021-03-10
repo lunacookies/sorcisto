@@ -56,6 +56,10 @@ impl Palette {
     pub(crate) fn purple(&self) -> Oklch {
         oklch(Self::DARK_LIGHTNESS, Self::LOW_CHROMA, 265.0)
     }
+
+    pub(crate) fn light_purple(&self) -> Oklch {
+        oklch(Self::MEDIUM_LIGHTNESS, Self::LOW_CHROMA, 265.0)
+    }
 }
 
 #[derive(Debug, Clone, Copy)]

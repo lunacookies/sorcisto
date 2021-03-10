@@ -44,11 +44,11 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
             Semantic("enum"),
             Semantic("union"),
             Semantic("typeAlias"),
-            Semantic("interface"),
-            Semantic("typeParameter"),
         ],
         palette.sky_blue(),
     );
+    builder.add_rule(Semantic("interface"), palette.light_purple());
+    builder.add_rule(Semantic("typeParameter"), palette.orange());
 
     builder.add_rule(Semantic("enumMember"), palette.dark_sky_blue());
 
