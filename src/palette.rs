@@ -8,13 +8,13 @@ impl Palette {
         oklch(scale.lightness(), scale.chroma(), 100.0)
     }
 
-    const DARK_LIGHTNESS: f32 = 0.65;
-    const MEDIUM_LIGHTNESS: f32 = 0.75;
-    const BRIGHT_LIGHTNESS: f32 = 0.95;
+    const DARK_LIGHTNESS: f32 = 0.62;
+    const MEDIUM_LIGHTNESS: f32 = 0.72;
+    const BRIGHT_LIGHTNESS: f32 = 0.9;
 
     const LOW_CHROMA: f32 = 0.04;
     const MEDIUM_CHROMA: f32 = 0.06;
-    const HIGH_CHROMA: f32 = 0.14;
+    const HIGH_CHROMA: f32 = 0.13;
 
     pub(crate) fn orange(&self) -> Oklch {
         oklch(Self::MEDIUM_LIGHTNESS, Self::HIGH_CHROMA, 70.0)
@@ -76,7 +76,7 @@ impl BaseScale {
     fn value(self) -> f32 {
         match self {
             Self::Bg => 0.0,
-            Self::Fg => 0.75,
+            Self::Fg => 0.72,
             Self::BrightFg => 1.0,
         }
     }

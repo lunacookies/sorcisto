@@ -4,117 +4,117 @@
 	"type": "dark",
 	"colors": {
 		"editor.background": "#222222",
-		"editor.foreground": "#C2C0B0",
-		"foreground": "#C2C0B0"
+		"editor.foreground": "#BBB9A9",
+		"foreground": "#BBB9A9"
 	},
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
 		"keyword": {
-			"foreground": "#838FA8",
+			"foreground": "#7A869F",
 			"fontStyle": ""
 		},
 		"builtinType": {
-			"foreground": "#838FA8",
+			"foreground": "#7A869F",
 			"fontStyle": ""
 		},
 		"keyword.controlFlow": {
-			"foreground": "#92B1D3",
+			"foreground": "#88A8C9",
 			"fontStyle": ""
 		},
 		"selfKeyword": {
-			"foreground": "#92B1D3",
+			"foreground": "#88A8C9",
 			"fontStyle": ""
 		},
 		"operator": {
-			"foreground": "#92B1D3",
+			"foreground": "#88A8C9",
 			"fontStyle": ""
 		},
 		"function": {
-			"foreground": "#F7F0C2",
+			"foreground": "#E7E0B2",
 			"fontStyle": ""
 		},
 		"method": {
-			"foreground": "#F7F0C2",
+			"foreground": "#E7E0B2",
 			"fontStyle": ""
 		},
 		"type": {
-			"foreground": "#93B4C0",
+			"foreground": "#8AABB6",
 			"fontStyle": ""
 		},
 		"class": {
-			"foreground": "#93B4C0",
+			"foreground": "#8AABB6",
 			"fontStyle": ""
 		},
 		"struct": {
-			"foreground": "#93B4C0",
+			"foreground": "#8AABB6",
 			"fontStyle": ""
 		},
 		"enum": {
-			"foreground": "#93B4C0",
+			"foreground": "#8AABB6",
 			"fontStyle": ""
 		},
 		"union": {
-			"foreground": "#93B4C0",
+			"foreground": "#8AABB6",
 			"fontStyle": ""
 		},
 		"typeAlias": {
-			"foreground": "#93B4C0",
+			"foreground": "#8AABB6",
 			"fontStyle": ""
 		},
 		"interface": {
-			"foreground": "#93B4C0",
+			"foreground": "#8AABB6",
 			"fontStyle": ""
 		},
 		"typeParameter": {
-			"foreground": "#93B4C0",
+			"foreground": "#8AABB6",
 			"fontStyle": ""
 		},
 		"enumMember": {
-			"foreground": "#7495A0",
+			"foreground": "#6C8C97",
 			"fontStyle": ""
 		},
 		"macro": {
-			"foreground": "#739799",
+			"foreground": "#6A8E90",
 			"fontStyle": ""
 		},
 		"attribute": {
-			"foreground": "#739799",
+			"foreground": "#6A8E90",
 			"fontStyle": ""
 		},
 		"*.attribute": {
-			"foreground": "#739799",
+			"foreground": "#6A8E90",
 			"fontStyle": ""
 		},
 		"string": {
-			"foreground": "#7C9976",
+			"foreground": "#738F6D",
 			"fontStyle": ""
 		},
 		"escapeSequence": {
-			"foreground": "#A3BB4B",
+			"foreground": "#9AB04B",
 			"fontStyle": ""
 		},
 		"formatSpecifier": {
-			"foreground": "#A3BB4B",
+			"foreground": "#9AB04B",
 			"fontStyle": ""
 		},
 		"boolean": {
-			"foreground": "#E69C3A",
+			"foreground": "#D8953D",
 			"fontStyle": ""
 		},
 		"*.constant": {
-			"foreground": "#E69C3A",
+			"foreground": "#D8953D",
 			"fontStyle": ""
 		},
 		"variable.static": {
-			"foreground": "#E69C3A",
+			"foreground": "#D8953D",
 			"fontStyle": ""
 		},
 		"number": {
-			"foreground": "#C47D03",
+			"foreground": "#B77610",
 			"fontStyle": ""
 		},
 		"characterLiteral": {
-			"foreground": "#C47D03",
+			"foreground": "#B77610",
 			"fontStyle": ""
 		},
 		"comment": {
