@@ -12,6 +12,7 @@ impl Palette {
     const MEDIUM_LIGHTNESS: f32 = 0.72;
     const BRIGHT_LIGHTNESS: f32 = 0.9;
 
+    const VERY_LOW_CHROMA: f32 = 0.0325;
     const LOW_CHROMA: f32 = 0.04;
     const MEDIUM_CHROMA: f32 = 0.06;
     const HIGH_CHROMA: f32 = 0.13;
@@ -41,11 +42,11 @@ impl Palette {
     }
 
     pub(crate) fn sky_blue(&self) -> Oklch {
-        oklch(Self::MEDIUM_LIGHTNESS, Self::LOW_CHROMA, 220.0)
+        oklch(Self::MEDIUM_LIGHTNESS, Self::VERY_LOW_CHROMA, 220.0)
     }
 
     pub(crate) fn dark_sky_blue(&self) -> Oklch {
-        oklch(Self::DARK_LIGHTNESS, Self::LOW_CHROMA, 220.0)
+        oklch(Self::DARK_LIGHTNESS, Self::VERY_LOW_CHROMA, 220.0)
     }
 
     pub(crate) fn blue(&self) -> Oklch {

@@ -38,39 +38,39 @@
 			"fontStyle": ""
 		},
 		"type": {
-			"foreground": "#8AABB6",
+			"foreground": "#8FAAB3",
 			"fontStyle": ""
 		},
 		"class": {
-			"foreground": "#8AABB6",
+			"foreground": "#8FAAB3",
 			"fontStyle": ""
 		},
 		"struct": {
-			"foreground": "#8AABB6",
+			"foreground": "#8FAAB3",
 			"fontStyle": ""
 		},
 		"enum": {
-			"foreground": "#8AABB6",
+			"foreground": "#8FAAB3",
 			"fontStyle": ""
 		},
 		"union": {
-			"foreground": "#8AABB6",
+			"foreground": "#8FAAB3",
 			"fontStyle": ""
 		},
 		"typeAlias": {
-			"foreground": "#8AABB6",
+			"foreground": "#8FAAB3",
 			"fontStyle": ""
 		},
 		"interface": {
-			"foreground": "#8AABB6",
+			"foreground": "#8FAAB3",
 			"fontStyle": ""
 		},
 		"typeParameter": {
-			"foreground": "#8AABB6",
+			"foreground": "#8FAAB3",
 			"fontStyle": ""
 		},
 		"enumMember": {
-			"foreground": "#6C8C97",
+			"foreground": "#718B94",
 			"fontStyle": ""
 		},
 		"macro": {
