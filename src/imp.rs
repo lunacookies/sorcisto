@@ -62,6 +62,11 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
     builder.add_rule(Semantic("string"), palette.green());
 
     builder.add_rules(
+        &[Semantic("escapeSequence"), Semantic("formatSpecifier")],
+        palette.olive(),
+    );
+
+    builder.add_rules(
         &[
             Semantic("boolean"),
             Semantic("*.constant"),

@@ -85,6 +85,14 @@
 			"foreground": "#7C9976",
 			"fontStyle": ""
 		},
+		"escapeSequence": {
+			"foreground": "#A3BB4B",
+			"fontStyle": ""
+		},
+		"formatSpecifier": {
+			"foreground": "#A3BB4B",
+			"fontStyle": ""
+		},
 		"boolean": {
 			"foreground": "#E69C3A",
 			"fontStyle": ""
