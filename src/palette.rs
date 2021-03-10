@@ -64,7 +64,7 @@ impl BaseScale {
     fn value(self) -> f32 {
         match self {
             Self::Bg => 0.0,
-            Self::Fg => 0.8,
+            Self::Fg => 0.75,
             Self::BrightFg => 1.0,
         }
     }

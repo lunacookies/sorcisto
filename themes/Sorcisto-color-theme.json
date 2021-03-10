@@ -4,8 +4,8 @@
 	"type": "dark",
 	"colors": {
 		"editor.background": "#222222",
-		"editor.foreground": "#CECCBA",
-		"foreground": "#CECCBA"
+		"editor.foreground": "#C2C0B0",
+		"foreground": "#C2C0B0"
 	},
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
