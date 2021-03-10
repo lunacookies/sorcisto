@@ -100,6 +100,10 @@
 		"number": {
 			"foreground": "#D58D25",
 			"fontStyle": ""
+		},
+		"characterLiteral": {
+			"foreground": "#D58D25",
+			"fontStyle": ""
 		}
 	},
 	"tokenColors": [

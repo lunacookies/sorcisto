@@ -70,7 +70,10 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.orange(),
     );
 
-    builder.add_rule(Semantic("number"), palette.dark_orange());
+    builder.add_rules(
+        &[Semantic("number"), Semantic("characterLiteral")],
+        palette.dark_orange(),
+    );
 
     builder.add_rule(
         Textmate("markup.heading"),
