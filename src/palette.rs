@@ -38,7 +38,7 @@ impl BaseScale {
     }
 
     fn chroma(self) -> f32 {
-        lerp(self.value(), 0.0..0.025)
+        lerp(self.value(), 0.0..0.03)
     }
 
     fn value(self) -> f32 {
