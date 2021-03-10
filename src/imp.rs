@@ -59,6 +59,8 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.teal(),
     );
 
+    builder.add_rule(Semantic("string"), palette.green());
+
     builder.add_rules(
         &[
             Semantic("boolean"),

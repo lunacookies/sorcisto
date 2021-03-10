@@ -81,6 +81,10 @@
 			"foreground": "#739799",
 			"fontStyle": ""
 		},
+		"string": {
+			"foreground": "#779B6F",
+			"fontStyle": ""
+		},
 		"boolean": {
 			"foreground": "#E69C3A",
 			"fontStyle": ""
