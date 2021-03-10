@@ -47,7 +47,7 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
             Semantic("interface"),
             Semantic("typeParameter"),
         ],
-        palette.light_blue(),
+        palette.sky_blue(),
     );
 
     builder.add_rules(
