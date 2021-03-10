@@ -50,6 +50,15 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.light_blue(),
     );
 
+    builder.add_rules(
+        &[
+            Semantic("macro"),
+            Semantic("attribute"),
+            Semantic("*.attribute"),
+        ],
+        palette.teal(),
+    );
+
     builder.add_rule(
         Textmate("markup.heading"),
         palette.base(BaseScale::BrightFg),

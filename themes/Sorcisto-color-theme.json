@@ -68,6 +68,18 @@
 		"typeParameter": {
 			"foreground": "#98B3BC",
 			"fontStyle": ""
+		},
+		"macro": {
+			"foreground": "#739799",
+			"fontStyle": ""
+		},
+		"attribute": {
+			"foreground": "#739799",
+			"fontStyle": ""
+		},
+		"*.attribute": {
+			"foreground": "#739799",
+			"fontStyle": ""
 		}
 	},
 	"tokenColors": [
