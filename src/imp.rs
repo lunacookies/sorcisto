@@ -50,6 +50,8 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.sky_blue(),
     );
 
+    builder.add_rule(Semantic("enumMember"), palette.dark_sky_blue());
+
     builder.add_rules(
         &[
             Semantic("macro"),

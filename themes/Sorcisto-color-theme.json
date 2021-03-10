@@ -69,6 +69,10 @@
 			"foreground": "#93B4C0",
 			"fontStyle": ""
 		},
+		"enumMember": {
+			"foreground": "#7495A0",
+			"fontStyle": ""
+		},
 		"macro": {
 			"foreground": "#739799",
 			"fontStyle": ""
