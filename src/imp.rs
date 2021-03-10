@@ -59,6 +59,17 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.teal(),
     );
 
+    builder.add_rules(
+        &[
+            Semantic("boolean"),
+            Semantic("*.constant"),
+            Semantic("variable.static"),
+        ],
+        palette.orange(),
+    );
+
+    builder.add_rule(Semantic("number"), palette.dark_orange());
+
     builder.add_rule(
         Textmate("markup.heading"),
         palette.base(BaseScale::BrightFg),

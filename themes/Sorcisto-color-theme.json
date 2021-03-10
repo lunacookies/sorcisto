@@ -80,6 +80,22 @@
 		"*.attribute": {
 			"foreground": "#739799",
 			"fontStyle": ""
+		},
+		"boolean": {
+			"foreground": "#E69C3A",
+			"fontStyle": ""
+		},
+		"*.constant": {
+			"foreground": "#E69C3A",
+			"fontStyle": ""
+		},
+		"variable.static": {
+			"foreground": "#E69C3A",
+			"fontStyle": ""
+		},
+		"number": {
+			"foreground": "#C47D03",
+			"fontStyle": ""
 		}
 	},
 	"tokenColors": [
