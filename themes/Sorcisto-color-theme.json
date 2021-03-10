@@ -38,35 +38,35 @@
 			"fontStyle": ""
 		},
 		"type": {
-			"foreground": "#98B3BC",
+			"foreground": "#93B4C0",
 			"fontStyle": ""
 		},
 		"class": {
-			"foreground": "#98B3BC",
+			"foreground": "#93B4C0",
 			"fontStyle": ""
 		},
 		"struct": {
-			"foreground": "#98B3BC",
+			"foreground": "#93B4C0",
 			"fontStyle": ""
 		},
 		"enum": {
-			"foreground": "#98B3BC",
+			"foreground": "#93B4C0",
 			"fontStyle": ""
 		},
 		"union": {
-			"foreground": "#98B3BC",
+			"foreground": "#93B4C0",
 			"fontStyle": ""
 		},
 		"typeAlias": {
-			"foreground": "#98B3BC",
+			"foreground": "#93B4C0",
 			"fontStyle": ""
 		},
 		"interface": {
-			"foreground": "#98B3BC",
+			"foreground": "#93B4C0",
 			"fontStyle": ""
 		},
 		"typeParameter": {
-			"foreground": "#98B3BC",
+			"foreground": "#93B4C0",
 			"fontStyle": ""
 		},
 		"macro": {
@@ -106,11 +106,11 @@
 			"fontStyle": ""
 		},
 		"number": {
-			"foreground": "#D58D25",
+			"foreground": "#C47D03",
 			"fontStyle": ""
 		},
 		"characterLiteral": {
-			"foreground": "#D58D25",
+			"foreground": "#C47D03",
 			"fontStyle": ""
 		}
 	},
