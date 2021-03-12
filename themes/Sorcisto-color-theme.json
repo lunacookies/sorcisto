@@ -104,6 +104,14 @@
 			"foreground": "#9AB04B",
 			"fontStyle": ""
 		},
+		"namespace": {
+			"foreground": "#91AE8B",
+			"fontStyle": ""
+		},
+		"property": {
+			"foreground": "#7187AB",
+			"fontStyle": ""
+		},
 		"boolean": {
 			"foreground": "#D8953D",
 			"fontStyle": ""
