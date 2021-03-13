@@ -48,11 +48,7 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
     );
 
     builder.add_rules(
-        &[
-            Semantic("keyword.controlFlow"),
-            Semantic("selfKeyword"),
-            Semantic("operator"),
-        ],
+        &[Semantic("keyword.controlFlow"), Semantic("selfKeyword")],
         palette.blue(),
     );
 

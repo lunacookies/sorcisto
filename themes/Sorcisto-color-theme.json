@@ -32,10 +32,6 @@
 			"foreground": "#88A8C9",
 			"fontStyle": ""
 		},
-		"operator": {
-			"foreground": "#88A8C9",
-			"fontStyle": ""
-		},
 		"function": {
 			"foreground": "#E7E0B2",
 			"fontStyle": ""
