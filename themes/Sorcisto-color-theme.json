@@ -88,6 +88,10 @@
 			"foreground": "#6A8E90",
 			"fontStyle": ""
 		},
+		"lifetime": {
+			"foreground": "#6A8E90",
+			"italic": true
+		},
 		"string": {
 			"foreground": "#738F6D",
 			"fontStyle": ""
