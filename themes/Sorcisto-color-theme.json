@@ -41,27 +41,23 @@
 			"fontStyle": ""
 		},
 		"type": {
-			"foreground": "#8FAAB3",
+			"foreground": "#96A7B9",
 			"fontStyle": ""
 		},
 		"class": {
-			"foreground": "#8FAAB3",
+			"foreground": "#96A7B9",
 			"fontStyle": ""
 		},
 		"struct": {
-			"foreground": "#8FAAB3",
-			"fontStyle": ""
-		},
-		"enum": {
-			"foreground": "#8FAAB3",
+			"foreground": "#96A7B9",
 			"fontStyle": ""
 		},
 		"union": {
-			"foreground": "#8FAAB3",
+			"foreground": "#96A7B9",
 			"fontStyle": ""
 		},
 		"typeAlias": {
-			"foreground": "#8FAAB3",
+			"foreground": "#96A7B9",
 			"fontStyle": ""
 		},
 		"interface": {
@@ -72,9 +68,13 @@
 			"foreground": "#D8953D",
 			"fontStyle": ""
 		},
+		"enum": {
+			"foreground": "#8FAAB3",
+			"italic": true
+		},
 		"enumMember": {
 			"foreground": "#718B94",
-			"fontStyle": ""
+			"italic": true
 		},
 		"macro": {
 			"foreground": "#6A8E90",

@@ -62,16 +62,19 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
             Semantic("type"),
             Semantic("class"),
             Semantic("struct"),
-            Semantic("enum"),
             Semantic("union"),
             Semantic("typeAlias"),
         ],
-        palette.sky_blue(),
+        palette.pale_blue(),
     );
     builder.add_rule(Semantic("interface"), palette.light_purple());
     builder.add_rule(Semantic("typeParameter"), palette.orange());
 
-    builder.add_rule(Semantic("enumMember"), palette.dark_sky_blue());
+    builder.add_rule(Semantic("enum"), (palette.sky_blue(), FontStyle::Italic));
+    builder.add_rule(
+        Semantic("enumMember"),
+        (palette.dark_sky_blue(), FontStyle::Italic),
+    );
 
     builder.add_rules(
         &[
