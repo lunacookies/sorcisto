@@ -58,7 +58,7 @@ impl Palette {
     }
 
     pub(crate) fn indigo(&self) -> Oklch {
-        oklch(Self::DARK_LIGHTNESS, Self::MEDIUM_CHROMA, 260.0)
+        oklch(Self::DARK_LIGHTNESS, Self::MEDIUM_CHROMA, 255.0)
     }
 
     pub(crate) fn purple(&self) -> Oklch {
