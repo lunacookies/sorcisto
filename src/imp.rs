@@ -42,10 +42,7 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
 }
 
 fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
-    builder.add_rules(
-        &[Semantic("keyword"), Semantic("builtinType")],
-        palette.purple(),
-    );
+    builder.add_rule(Semantic("keyword"), palette.purple());
 
     builder.add_rules(
         &[Semantic("keyword.controlFlow"), Semantic("selfKeyword")],
@@ -69,6 +66,7 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
     );
     builder.add_rule(Semantic("interface"), palette.light_purple());
     builder.add_rule(Semantic("typeParameter"), palette.orange());
+    builder.add_rule(Semantic("builtinType"), palette.slate());
 
     builder.add_rule(Semantic("enum"), (palette.sky_blue(), FontStyle::Italic));
     builder.add_rule(
