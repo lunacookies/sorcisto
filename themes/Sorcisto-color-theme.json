@@ -114,11 +114,11 @@
 		},
 		"*.constant": {
 			"foreground": "#D8953D",
-			"fontStyle": ""
+			"italic": true
 		},
 		"variable.static": {
 			"foreground": "#D8953D",
-			"fontStyle": ""
+			"italic": true
 		},
 		"number": {
 			"foreground": "#B77610",

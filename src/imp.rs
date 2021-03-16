@@ -94,15 +94,11 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
 
     builder.add_rule(Semantic("property"), palette.indigo());
 
+    builder.add_rule(Semantic("boolean"), palette.orange());
     builder.add_rules(
-        &[
-            Semantic("boolean"),
-            Semantic("*.constant"),
-            Semantic("variable.static"),
-        ],
-        palette.orange(),
+        &[Semantic("*.constant"), Semantic("variable.static")],
+        (palette.orange(), FontStyle::Italic),
     );
-
     builder.add_rules(
         &[Semantic("number"), Semantic("characterLiteral")],
         palette.dark_orange(),
