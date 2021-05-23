@@ -19,6 +19,10 @@ impl Palette {
     const HIGH_CHROMA: f32 = 0.13;
     const VERY_HIGH_CHROMA: f32 = 0.16;
 
+    pub(crate) fn red(&self) -> Oklch {
+        oklch(Self::DARK_LIGHTNESS, Self::HIGH_CHROMA, 25.0)
+    }
+
     pub(crate) fn orange(&self) -> Oklch {
         oklch(Self::BRIGHT_LIGHTNESS, Self::VERY_HIGH_CHROMA, 60.0)
     }

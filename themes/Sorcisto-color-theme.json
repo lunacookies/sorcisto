@@ -141,6 +141,10 @@
 			"foreground": "#DF8F48",
 			"fontStyle": ""
 		},
+		"unresolvedReference": {
+			"foreground": "#C8635D",
+			"fontStyle": ""
+		},
 		"comment": {
 			"foreground": "#FFFDE6",
 			"italic": true

@@ -117,6 +117,8 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.dark_orange(),
     );
 
+    builder.add_rule(Semantic("unresolvedReference"), palette.red());
+
     builder.add_rule(
         Semantic("comment"),
         (palette.base(BaseScale::BrightFg), FontStyle::Italic),
