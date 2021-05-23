@@ -28,7 +28,7 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
         ],
         palette.base(BaseScale::LighterBg),
     );
-    builder.add_workspace_rule("statusBar.foreground", palette.base(BaseScale::DarkFg));
+    builder.add_workspace_rule("statusBar.foreground", palette.base(BaseScale::Fg));
 
     builder.add_workspace_rule(
         "editor.selectionBackground",
