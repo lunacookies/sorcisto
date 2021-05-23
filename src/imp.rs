@@ -98,8 +98,6 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.olive(),
     );
 
-    builder.add_rule(Semantic("namespace"), palette.light_green());
-
     builder.add_rule(Semantic("property"), palette.indigo());
 
     builder.add_rules(
