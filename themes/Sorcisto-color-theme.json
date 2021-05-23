@@ -12,6 +12,7 @@
 		"statusBar.noFolderBackground": "#3C3B39",
 		"statusBar.foreground": "#5A5A54",
 		"editor.selectionBackground": "#3C3B39",
+		"editorCodeLens.foreground": "#5A5A54",
 		"rust_analyzer.inlayHints.foreground": "#5A5A54"
 	},
 	"semanticHighlighting": true,
