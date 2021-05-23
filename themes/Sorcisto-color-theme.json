@@ -17,14 +17,22 @@
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
 		"keyword": {
-			"foreground": "#7A869F",
-			"fontStyle": ""
-		},
-		"keyword.controlFlow": {
 			"foreground": "#88A8C9",
 			"fontStyle": ""
 		},
-		"selfKeyword": {
+		"operator": {
+			"foreground": "#88A8C9",
+			"fontStyle": ""
+		},
+		"arithmetic": {
+			"foreground": "#88A8C9",
+			"fontStyle": ""
+		},
+		"logical": {
+			"foreground": "#88A8C9",
+			"fontStyle": ""
+		},
+		"bitwise": {
 			"foreground": "#88A8C9",
 			"fontStyle": ""
 		},

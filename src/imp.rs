@@ -42,10 +42,14 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
 }
 
 fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
-    builder.add_rule(Semantic("keyword"), palette.purple());
-
     builder.add_rules(
-        &[Semantic("keyword.controlFlow"), Semantic("selfKeyword")],
+        &[
+            Semantic("keyword"),
+            Semantic("operator"),
+            Semantic("arithmetic"),
+            Semantic("logical"),
+            Semantic("bitwise"),
+        ],
         palette.blue(),
     );
 
