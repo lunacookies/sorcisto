@@ -3,16 +3,16 @@
 	"name": "Sorcisto",
 	"type": "dark",
 	"colors": {
-		"editor.background": "#222222",
-		"editor.foreground": "#BBB9A9",
-		"foreground": "#BBB9A9",
-		"editor.lineHighlightBackground": "#272726",
-		"statusBar.background": "#3E3D3B",
-		"statusBar.debuggingBackground": "#3E3D3B",
-		"statusBar.noFolderBackground": "#3E3D3B",
-		"statusBar.foreground": "#88877C",
-		"editor.selectionBackground": "#3E3D3B",
-		"rust_analyzer.inlayHints.foreground": "#88877C"
+		"editor.background": "#1F1F1F",
+		"editor.foreground": "#C2BFAF",
+		"foreground": "#C2BFAF",
+		"editor.lineHighlightBackground": "#252524",
+		"statusBar.background": "#3C3B39",
+		"statusBar.debuggingBackground": "#3C3B39",
+		"statusBar.noFolderBackground": "#3C3B39",
+		"statusBar.foreground": "#5A5A54",
+		"editor.selectionBackground": "#3C3B39",
+		"rust_analyzer.inlayHints.foreground": "#5A5A54"
 	},
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
