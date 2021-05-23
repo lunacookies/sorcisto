@@ -109,7 +109,11 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.orange(),
     );
     builder.add_rules(
-        &[Semantic("*.constant"), Semantic("variable.static")],
+        &[
+            Semantic("*.constant"),
+            Semantic("variable.static"),
+            Semantic("constParameter"),
+        ],
         palette.dark_orange(),
     );
 

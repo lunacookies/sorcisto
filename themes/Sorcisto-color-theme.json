@@ -137,6 +137,10 @@
 			"foreground": "#DF8F48",
 			"fontStyle": ""
 		},
+		"constParameter": {
+			"foreground": "#DF8F48",
+			"fontStyle": ""
+		},
 		"comment": {
 			"foreground": "#FFFDE6",
 			"italic": true
