@@ -89,7 +89,7 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.teal(),
     );
 
-    builder.add_rule(Semantic("lifetime"), (palette.teal(), FontStyle::Italic));
+    builder.add_rule(Semantic("lifetime"), (palette.olive(), FontStyle::Italic));
 
     builder.add_rule(Semantic("string"), palette.green());
 

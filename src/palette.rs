@@ -30,7 +30,7 @@ impl Palette {
     }
 
     pub(crate) fn olive(&self) -> Oklch {
-        oklch(Self::MEDIUM_LIGHTNESS, Self::HIGH_CHROMA, 120.0)
+        oklch(Self::DARK_LIGHTNESS, Self::HIGH_CHROMA, 120.0)
     }
 
     pub(crate) fn green(&self) -> Oklch {

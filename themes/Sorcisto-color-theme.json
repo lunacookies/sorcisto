@@ -98,7 +98,7 @@
 			"fontStyle": ""
 		},
 		"lifetime": {
-			"foreground": "#6A8E90",
+			"foreground": "#7D9128",
 			"italic": true
 		},
 		"string": {
@@ -106,11 +106,11 @@
 			"fontStyle": ""
 		},
 		"escapeSequence": {
-			"foreground": "#9AB04B",
+			"foreground": "#7D9128",
 			"fontStyle": ""
 		},
 		"formatSpecifier": {
-			"foreground": "#9AB04B",
+			"foreground": "#7D9128",
 			"fontStyle": ""
 		},
 		"namespace": {
