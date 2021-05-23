@@ -98,7 +98,7 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.olive(),
     );
 
-    builder.add_rule(Semantic("property"), palette.indigo());
+    builder.add_rule(Semantic("property"), palette.dark_blue());
 
     builder.add_rules(
         &[
