@@ -45,35 +45,35 @@
 			"fontStyle": ""
 		},
 		"type": {
-			"foreground": "#96A7B9",
+			"foreground": "#7A869F",
 			"fontStyle": ""
 		},
 		"class": {
-			"foreground": "#96A7B9",
+			"foreground": "#7A869F",
 			"fontStyle": ""
 		},
 		"struct": {
-			"foreground": "#96A7B9",
+			"foreground": "#7A869F",
 			"fontStyle": ""
 		},
 		"union": {
-			"foreground": "#96A7B9",
+			"foreground": "#7A869F",
 			"fontStyle": ""
 		},
 		"typeAlias": {
-			"foreground": "#96A7B9",
+			"foreground": "#7A869F",
+			"fontStyle": ""
+		},
+		"builtinType": {
+			"foreground": "#7A869F",
 			"fontStyle": ""
 		},
 		"interface": {
-			"foreground": "#98A5BE",
+			"foreground": "#96A7B9",
 			"fontStyle": ""
 		},
 		"typeParameter": {
 			"foreground": "#D8953D",
-			"fontStyle": ""
-		},
-		"builtinType": {
-			"foreground": "#6E8B9A",
 			"fontStyle": ""
 		},
 		"enum": {
