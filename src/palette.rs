@@ -10,7 +10,7 @@ impl Palette {
 
     const DARK_LIGHTNESS: f32 = 0.62;
     const MEDIUM_LIGHTNESS: f32 = 0.72;
-    const BRIGHT_LIGHTNESS: f32 = 0.9;
+    const BRIGHT_LIGHTNESS: f32 = 0.96;
 
     const VERY_LOW_CHROMA: f32 = 0.0325;
     const LOW_CHROMA: f32 = 0.04;

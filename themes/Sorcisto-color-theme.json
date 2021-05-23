@@ -37,11 +37,11 @@
 			"fontStyle": ""
 		},
 		"function": {
-			"foreground": "#E7E0B2",
+			"foreground": "#FBF4C5",
 			"fontStyle": ""
 		},
 		"method": {
-			"foreground": "#E7E0B2",
+			"foreground": "#FBF4C5",
 			"fontStyle": ""
 		},
 		"type": {
