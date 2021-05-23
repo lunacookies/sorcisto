@@ -102,13 +102,16 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
 
     builder.add_rule(Semantic("property"), palette.indigo());
 
-    builder.add_rule(Semantic("boolean"), palette.orange());
     builder.add_rules(
-        &[Semantic("*.constant"), Semantic("variable.static")],
-        (palette.orange(), FontStyle::Italic),
+        &[
+            Semantic("number"),
+            Semantic("boolean"),
+            Semantic("characterLiteral"),
+        ],
+        palette.orange(),
     );
     builder.add_rules(
-        &[Semantic("number"), Semantic("characterLiteral")],
+        &[Semantic("*.constant"), Semantic("variable.static")],
         palette.dark_orange(),
     );
 

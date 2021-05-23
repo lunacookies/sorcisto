@@ -74,7 +74,7 @@
 			"fontStyle": ""
 		},
 		"typeParameter": {
-			"foreground": "#D8953D",
+			"foreground": "#FF9C3A",
 			"fontStyle": ""
 		},
 		"enum": {
@@ -121,24 +121,24 @@
 			"foreground": "#6E88AA",
 			"fontStyle": ""
 		},
-		"boolean": {
-			"foreground": "#D8953D",
+		"number": {
+			"foreground": "#FF9C3A",
 			"fontStyle": ""
 		},
-		"*.constant": {
-			"foreground": "#D8953D",
-			"italic": true
-		},
-		"variable.static": {
-			"foreground": "#D8953D",
-			"italic": true
-		},
-		"number": {
-			"foreground": "#B77610",
+		"boolean": {
+			"foreground": "#FF9C3A",
 			"fontStyle": ""
 		},
 		"characterLiteral": {
-			"foreground": "#B77610",
+			"foreground": "#FF9C3A",
+			"fontStyle": ""
+		},
+		"*.constant": {
+			"foreground": "#DF8F48",
+			"fontStyle": ""
+		},
+		"variable.static": {
+			"foreground": "#DF8F48",
 			"fontStyle": ""
 		},
 		"comment": {
