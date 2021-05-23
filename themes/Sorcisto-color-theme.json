@@ -145,6 +145,10 @@
 			"foreground": "#C8635D",
 			"fontStyle": ""
 		},
+		"*.unsafe": {
+			"foreground": "#C8635D",
+			"bold": true
+		},
 		"comment": {
 			"foreground": "#FFFDE6",
 			"italic": true

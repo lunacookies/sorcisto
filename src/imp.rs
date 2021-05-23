@@ -119,6 +119,8 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
 
     builder.add_rule(Semantic("unresolvedReference"), palette.red());
 
+    builder.add_rule(Semantic("*.unsafe"), (palette.red(), FontStyle::Bold));
+
     builder.add_rule(
         Semantic("comment"),
         (palette.base(BaseScale::BrightFg), FontStyle::Italic),
