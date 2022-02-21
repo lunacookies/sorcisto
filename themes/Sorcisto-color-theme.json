@@ -1,170 +1,140 @@
 // Do not edit directly; this file is generated.
 {
-	"name": "Sorcisto",
-	"type": "dark",
-	"colors": {
-		"editor.background": "#1F1F1F",
-		"editor.foreground": "#C2BFAF",
-		"foreground": "#C2BFAF",
-		"editor.lineHighlightBackground": "#252524",
-		"statusBar.background": "#3C3B39",
-		"statusBar.debuggingBackground": "#3C3B39",
-		"statusBar.noFolderBackground": "#3C3B39",
-		"statusBar.foreground": "#C2BFAF",
-		"editor.selectionBackground": "#3C3B39",
-		"editorCodeLens.foreground": "#5A5A54",
-		"rust_analyzer.inlayHints.foreground": "#5A5A54"
-	},
-	"semanticHighlighting": true,
-	"semanticTokenColors": {
-		"keyword": {
-			"foreground": "#88A8C9",
-			"fontStyle": ""
-		},
-		"operator": {
-			"foreground": "#88A8C9",
-			"fontStyle": ""
-		},
-		"arithmetic": {
-			"foreground": "#88A8C9",
-			"fontStyle": ""
-		},
-		"logical": {
-			"foreground": "#88A8C9",
-			"fontStyle": ""
-		},
-		"bitwise": {
-			"foreground": "#88A8C9",
-			"fontStyle": ""
-		},
-		"function": {
-			"foreground": "#FBF4C5",
-			"fontStyle": ""
-		},
-		"method": {
-			"foreground": "#FBF4C5",
-			"fontStyle": ""
-		},
-		"type": {
-			"foreground": "#7A869F",
-			"fontStyle": ""
-		},
-		"class": {
-			"foreground": "#7A869F",
-			"fontStyle": ""
-		},
-		"struct": {
-			"foreground": "#7A869F",
-			"fontStyle": ""
-		},
-		"union": {
-			"foreground": "#7A869F",
-			"fontStyle": ""
-		},
-		"typeAlias": {
-			"foreground": "#7A869F",
-			"fontStyle": ""
-		},
-		"builtinType": {
-			"foreground": "#7A869F",
-			"fontStyle": ""
-		},
-		"interface": {
-			"foreground": "#96A7B9",
-			"fontStyle": ""
-		},
-		"typeParameter": {
-			"foreground": "#FF9C3A",
-			"fontStyle": ""
-		},
-		"enum": {
-			"foreground": "#8FAAB3",
-			"italic": true
-		},
-		"enumMember": {
-			"foreground": "#718B94",
-			"italic": true
-		},
-		"macro": {
-			"foreground": "#6A8E90",
-			"fontStyle": ""
-		},
-		"attribute": {
-			"foreground": "#6A8E90",
-			"fontStyle": ""
-		},
-		"*.attribute": {
-			"foreground": "#6A8E90",
-			"fontStyle": ""
-		},
-		"lifetime": {
-			"foreground": "#7D9128",
-			"italic": true
-		},
-		"string": {
-			"foreground": "#738F6D",
-			"fontStyle": ""
-		},
-		"escapeSequence": {
-			"foreground": "#7D9128",
-			"fontStyle": ""
-		},
-		"formatSpecifier": {
-			"foreground": "#7D9128",
-			"fontStyle": ""
-		},
-		"property": {
-			"foreground": "#6B89A9",
-			"fontStyle": ""
-		},
-		"number": {
-			"foreground": "#FF9C3A",
-			"fontStyle": ""
-		},
-		"boolean": {
-			"foreground": "#FF9C3A",
-			"fontStyle": ""
-		},
-		"characterLiteral": {
-			"foreground": "#FF9C3A",
-			"fontStyle": ""
-		},
-		"*.constant": {
-			"foreground": "#DF8F48",
-			"fontStyle": ""
-		},
-		"variable.static": {
-			"foreground": "#DF8F48",
-			"fontStyle": ""
-		},
-		"constParameter": {
-			"foreground": "#DF8F48",
-			"fontStyle": ""
-		},
-		"unresolvedReference": {
-			"foreground": "#C8635D",
-			"fontStyle": ""
-		},
-		"*.unsafe": {
-			"foreground": "#C8635D",
-			"bold": true
-		},
-		"comment": {
-			"foreground": "#FFFDE6",
-			"italic": true
-		},
-		"comment.documentation": {
-			"foreground": "#FFFDE6",
-			"fontStyle": ""
-		}
-	},
-	"tokenColors": [
-		{
-			"scope": "markup.heading",
-			"settings": {
-				"foreground": "#FFFDE6",
-				"fontStyle": ""
-			}
-		}
-	]
+    "name": "Sorcisto",
+    "tokenColors": [
+        {
+            "scope": [
+                "markup.heading"
+            ],
+            "settings": {
+                "foreground": "#FDF9E3"
+            }
+        }
+    ],
+    "semanticHighlighting": true,
+    "semanticTokenColors": {
+        "keyword": {
+            "foreground": "#88A8C9"
+        },
+        "operator": {
+            "foreground": "#88A8C9"
+        },
+        "arithmetic": {
+            "foreground": "#88A8C9"
+        },
+        "logical": {
+            "foreground": "#88A8C9"
+        },
+        "bitwise": {
+            "foreground": "#88A8C9"
+        },
+        "function": {
+            "foreground": "#FBF4C5"
+        },
+        "method": {
+            "foreground": "#FBF4C5"
+        },
+        "type": {
+            "foreground": "#7A869F"
+        },
+        "class": {
+            "foreground": "#7A869F"
+        },
+        "struct": {
+            "foreground": "#7A869F"
+        },
+        "union": {
+            "foreground": "#7A869F"
+        },
+        "typeAlias": {
+            "foreground": "#7A869F"
+        },
+        "builtinType": {
+            "foreground": "#7A869F"
+        },
+        "interface": {
+            "foreground": "#96A7B9"
+        },
+        "typeParameter": {
+            "foreground": "#FF9C40"
+        },
+        "enum": {
+            "foreground": "#8FAAB3",
+            "italic": true
+        },
+        "enumMember": {
+            "foreground": "#718B94",
+            "italic": true
+        },
+        "macro": {
+            "foreground": "#6A8E90"
+        },
+        "attribute": {
+            "foreground": "#6A8E90"
+        },
+        "*.attribute": {
+            "foreground": "#6A8E90"
+        },
+        "lifetime": {
+            "foreground": "#7C9128",
+            "italic": true
+        },
+        "string": {
+            "foreground": "#738F6D"
+        },
+        "escapeSequence": {
+            "foreground": "#7C9128"
+        },
+        "formatSpecifier": {
+            "foreground": "#7C9128"
+        },
+        "property": {
+            "foreground": "#6B89A9"
+        },
+        "number": {
+            "foreground": "#FF9C40"
+        },
+        "boolean": {
+            "foreground": "#FF9C40"
+        },
+        "characterLiteral": {
+            "foreground": "#FF9C40"
+        },
+        "*.constant": {
+            "foreground": "#DF8F48"
+        },
+        "variable.static": {
+            "foreground": "#DF8F48"
+        },
+        "constParameter": {
+            "foreground": "#DF8F48"
+        },
+        "unresolvedReference": {
+            "foreground": "#C8635D"
+        },
+        "*.unsafe": {
+            "foreground": "#C8635D",
+            "bold": true
+        },
+        "comment": {
+            "foreground": "#FDF9E3",
+            "italic": true
+        },
+        "comment.documentation": {
+            "foreground": "#FDF9E3"
+        }
+    },
+    "colors": {
+        "editor.background": "#1F1F1F",
+        "editor.foreground": "#BFBDAD",
+        "foreground": "#BFBDAD",
+        "editor.lineHighlightBackground": "#252424",
+        "statusBar.background": "#3B3B38",
+        "statusBar.debuggingBackground": "#3B3B38",
+        "statusBar.noFolderBackground": "#3B3B38",
+        "statusBar.foreground": "#BFBDAD",
+        "editor.selectionBackground": "#3B3B38",
+        "editorCodeLens.foreground": "#5A5953",
+        "rust_analyzer.inlayHints.foreground": "#5A5953"
+    }
 }

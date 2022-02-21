@@ -1,137 +1,64 @@
 use crate::palette::{BaseScale, Palette};
-use mottle::style::FontStyle;
-use mottle::theme::Scope::*;
-use mottle::theme::ThemeBuilder;
+use mottle::dsl::{s, tm, FontStyle, ThemeBuilder};
 
-pub(crate) fn add_rules(builder: &mut ThemeBuilder, palette: &Palette) {
-    workspace_colors(builder, palette);
-    syntax_highlighting(builder, palette);
+pub(crate) fn add_rules(t: &mut ThemeBuilder, palette: &Palette) {
+    workspace_colors(t, palette);
+    syntax_highlighting(t, palette);
 }
 
-fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
-    builder.add_workspace_rule("editor.background", palette.base(BaseScale::Bg));
-    builder.add_workspace_rules(
-        &["editor.foreground", "foreground"],
-        palette.base(BaseScale::Fg),
-    );
+fn workspace_colors(t: &mut ThemeBuilder, palette: &Palette) {
+    t.w(["editor.background"], palette.base(BaseScale::Bg));
+    t.w(["editor.foreground", "foreground"], palette.base(BaseScale::Fg));
 
-    builder.add_workspace_rule(
-        "editor.lineHighlightBackground",
-        palette.base(BaseScale::LightBg),
-    );
+    t.w(["editor.lineHighlightBackground"], palette.base(BaseScale::LightBg));
 
-    builder.add_workspace_rules(
-        &[
-            "statusBar.background",
-            "statusBar.debuggingBackground",
-            "statusBar.noFolderBackground",
-        ],
+    t.w(
+        ["statusBar.background", "statusBar.debuggingBackground", "statusBar.noFolderBackground"],
         palette.base(BaseScale::LighterBg),
     );
-    builder.add_workspace_rule("statusBar.foreground", palette.base(BaseScale::Fg));
+    t.w(["statusBar.foreground"], palette.base(BaseScale::Fg));
 
-    builder.add_workspace_rule(
-        "editor.selectionBackground",
-        palette.base(BaseScale::LighterBg),
-    );
+    t.w(["editor.selectionBackground"], palette.base(BaseScale::LighterBg));
 
-    builder.add_workspace_rule("editorCodeLens.foreground", palette.base(BaseScale::DarkFg));
+    t.w(["editorCodeLens.foreground"], palette.base(BaseScale::DarkFg));
 
-    builder.add_workspace_rule(
-        "rust_analyzer.inlayHints.foreground",
-        palette.base(BaseScale::DarkFg),
-    );
+    t.w(["rust_analyzer.inlayHints.foreground"], palette.base(BaseScale::DarkFg));
 }
 
-fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
-    builder.add_rules(
-        &[
-            Semantic("keyword"),
-            Semantic("operator"),
-            Semantic("arithmetic"),
-            Semantic("logical"),
-            Semantic("bitwise"),
-        ],
-        palette.blue(),
-    );
+fn syntax_highlighting(t: &mut ThemeBuilder, palette: &Palette) {
+    t.a([s("keyword"), s("operator"), s("arithmetic"), s("logical"), s("bitwise")], palette.blue());
 
-    builder.add_rules(
-        &[Semantic("function"), Semantic("method")],
-        palette.yellow(),
-    );
+    t.a([s("function"), s("method")], palette.yellow());
 
-    builder.add_rules(
-        &[
-            Semantic("type"),
-            Semantic("class"),
-            Semantic("struct"),
-            Semantic("union"),
-            Semantic("typeAlias"),
-            Semantic("builtinType"),
-        ],
+    t.a(
+        [s("type"), s("class"), s("struct"), s("union"), s("typeAlias"), s("builtinType")],
         palette.purple(),
     );
-    builder.add_rule(Semantic("interface"), palette.pale_blue());
-    builder.add_rule(Semantic("typeParameter"), palette.orange());
+    t.a([s("interface")], palette.pale_blue());
+    t.a([s("typeParameter")], palette.orange());
 
-    builder.add_rule(Semantic("enum"), (palette.sky_blue(), FontStyle::Italic));
-    builder.add_rule(
-        Semantic("enumMember"),
-        (palette.dark_sky_blue(), FontStyle::Italic),
-    );
+    t.a([s("enum")], (palette.sky_blue(), FontStyle::Italic));
+    t.a([s("enumMember")], (palette.dark_sky_blue(), FontStyle::Italic));
 
-    builder.add_rules(
-        &[
-            Semantic("macro"),
-            Semantic("attribute"),
-            Semantic("*.attribute"),
-        ],
-        palette.teal(),
-    );
+    t.a([s("macro"), s("attribute"), s("*.attribute")], palette.teal());
 
-    builder.add_rule(Semantic("lifetime"), (palette.olive(), FontStyle::Italic));
+    t.a([s("lifetime")], (palette.olive(), FontStyle::Italic));
 
-    builder.add_rule(Semantic("string"), palette.green());
+    t.a([s("string")], palette.green());
 
-    builder.add_rules(
-        &[Semantic("escapeSequence"), Semantic("formatSpecifier")],
-        palette.olive(),
-    );
+    t.a([s("escapeSequence"), s("formatSpecifier")], palette.olive());
 
-    builder.add_rule(Semantic("property"), palette.dark_blue());
+    t.a([s("property")], palette.dark_blue());
 
-    builder.add_rules(
-        &[
-            Semantic("number"),
-            Semantic("boolean"),
-            Semantic("characterLiteral"),
-        ],
-        palette.orange(),
-    );
-    builder.add_rules(
-        &[
-            Semantic("*.constant"),
-            Semantic("variable.static"),
-            Semantic("constParameter"),
-        ],
-        palette.dark_orange(),
-    );
+    t.a([s("number"), s("boolean"), s("characterLiteral")], palette.orange());
+    t.a([s("*.constant"), s("variable.static"), s("constParameter")], palette.dark_orange());
 
-    builder.add_rule(Semantic("unresolvedReference"), palette.red());
+    t.a([s("unresolvedReference")], palette.red());
 
-    builder.add_rule(Semantic("*.unsafe"), (palette.red(), FontStyle::Bold));
+    t.a([s("*.unsafe")], (palette.red(), FontStyle::Bold));
 
-    builder.add_rule(
-        Semantic("comment"),
-        (palette.base(BaseScale::BrightFg), FontStyle::Italic),
-    );
-    builder.add_rule(
-        Semantic("comment.documentation"),
-        palette.base(BaseScale::BrightFg),
-    );
+    t.a([s("comment")], (palette.base(BaseScale::BrightFg), FontStyle::Italic));
+    t.a([s("comment.documentation")], palette.base(BaseScale::BrightFg));
 
-    builder.add_rule(
-        Textmate("markup.heading"),
-        palette.base(BaseScale::BrightFg),
-    );
+    t.a([tm("markup.heading")], palette.base(BaseScale::BrightFg));
 }

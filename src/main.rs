@@ -1,15 +1,14 @@
 mod imp;
 mod palette;
 
-use mottle::theme::{ThemeBuilder, Type};
-use std::io;
+use mottle::dsl::ThemeBuilder;
 
-fn main() -> io::Result<()> {
+fn main() -> anyhow::Result<()> {
     let palette = palette::Palette;
 
-    let mut icefall = ThemeBuilder::new("Sorcisto".to_string(), Type::Dark);
-    imp::add_rules(&mut icefall, &palette);
-    icefall.build().save()?;
+    let mut b = ThemeBuilder::default();
+    imp::add_rules(&mut b, &palette);
+    mottle::save_theme(&b.build("Sorcisto"))?;
 
     Ok(())
 }

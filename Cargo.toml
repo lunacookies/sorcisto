@@ -1,9 +1,9 @@
 [package]
-authors = ["Aramis Razzaghipour <aramisnoah@gmail.com>"]
-edition = "2018"
+edition = "2021"
 name = "sorcisto"
 version = "0.1.0"
 
 [dependencies]
-mottle = "0.1.3"
-tincture = "0.5.0"
+anyhow = "1.0"
+mottle = "0.4.0"
+tincture = "1.0"
