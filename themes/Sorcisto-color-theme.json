@@ -59,12 +59,10 @@
             "foreground": "#FF9C40"
         },
         "enum": {
-            "foreground": "#8FAAB3",
-            "italic": true
+            "foreground": "#8FAAB3"
         },
         "enumMember": {
-            "foreground": "#718B94",
-            "italic": true
+            "foreground": "#718B94"
         },
         "macro": {
             "foreground": "#6A8E90"
@@ -76,8 +74,7 @@
             "foreground": "#6A8E90"
         },
         "lifetime": {
-            "foreground": "#7C9128",
-            "italic": true
+            "foreground": "#7C9128"
         },
         "string": {
             "foreground": "#738F6D"
@@ -117,10 +114,6 @@
             "bold": true
         },
         "comment": {
-            "foreground": "#FDF9E3",
-            "italic": true
-        },
-        "comment.documentation": {
             "foreground": "#FDF9E3"
         }
     },

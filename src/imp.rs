@@ -37,12 +37,12 @@ fn syntax_highlighting(t: &mut ThemeBuilder, palette: &Palette) {
     t.a([s("interface")], palette.pale_blue());
     t.a([s("typeParameter")], palette.orange());
 
-    t.a([s("enum")], (palette.sky_blue(), FontStyle::Italic));
-    t.a([s("enumMember")], (palette.dark_sky_blue(), FontStyle::Italic));
+    t.a([s("enum")], palette.sky_blue());
+    t.a([s("enumMember")], palette.dark_sky_blue());
 
     t.a([s("macro"), s("attribute"), s("*.attribute")], palette.teal());
 
-    t.a([s("lifetime")], (palette.olive(), FontStyle::Italic));
+    t.a([s("lifetime")], palette.olive());
 
     t.a([s("string")], palette.green());
 
@@ -57,8 +57,7 @@ fn syntax_highlighting(t: &mut ThemeBuilder, palette: &Palette) {
 
     t.a([s("*.unsafe")], (palette.red(), FontStyle::Bold));
 
-    t.a([s("comment")], (palette.base(BaseScale::BrightFg), FontStyle::Italic));
-    t.a([s("comment.documentation")], palette.base(BaseScale::BrightFg));
+    t.a([s("comment")], palette.base(BaseScale::BrightFg));
 
     t.a([tm("markup.heading")], palette.base(BaseScale::BrightFg));
 }
