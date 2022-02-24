@@ -1,63 +1,63 @@
-use crate::palette::{BaseScale, Palette};
+use crate::palette::Palette;
 use mottle::dsl::{s, tm, FontStyle, ThemeBuilder};
 
-pub(crate) fn add_rules(t: &mut ThemeBuilder, palette: &Palette) {
-    workspace_colors(t, palette);
-    syntax_highlighting(t, palette);
+pub(crate) fn add_rules(t: &mut ThemeBuilder, p: &Palette) {
+    workspace_colors(t, p);
+    syntax_highlighting(t, p);
 }
 
-fn workspace_colors(t: &mut ThemeBuilder, palette: &Palette) {
-    t.w(["editor.background"], palette.base(BaseScale::Bg));
-    t.w(["editor.foreground", "foreground"], palette.base(BaseScale::Fg));
+fn workspace_colors(t: &mut ThemeBuilder, p: &Palette) {
+    t.w(["editor.background"], p.bg);
+    t.w(["editor.foreground", "foreground"], p.fg);
 
-    t.w(["editor.lineHighlightBackground"], palette.base(BaseScale::LightBg));
+    t.w(["editor.lineHighlightBackground"], p.light_bg);
 
     t.w(
         ["statusBar.background", "statusBar.debuggingBackground", "statusBar.noFolderBackground"],
-        palette.base(BaseScale::LighterBg),
+        p.lighter_bg,
     );
-    t.w(["statusBar.foreground"], palette.base(BaseScale::Fg));
+    t.w(["statusBar.foreground"], p.fg);
 
-    t.w(["editor.selectionBackground"], palette.base(BaseScale::LighterBg));
+    t.w(["editor.selectionBackground"], p.lighter_bg);
 
-    t.w(["editorCodeLens.foreground"], palette.base(BaseScale::DarkFg));
+    t.w(["editorCodeLens.foreground"], p.dark_fg);
 
-    t.w(["rust_analyzer.inlayHints.foreground"], palette.base(BaseScale::DarkFg));
+    t.w(["rust_analyzer.inlayHints.foreground"], p.dark_fg);
 }
 
-fn syntax_highlighting(t: &mut ThemeBuilder, palette: &Palette) {
-    t.a([s("keyword"), s("operator"), s("arithmetic"), s("logical"), s("bitwise")], palette.blue());
+fn syntax_highlighting(t: &mut ThemeBuilder, p: &Palette) {
+    t.a([s("keyword"), s("operator"), s("arithmetic"), s("logical"), s("bitwise")], p.blue);
 
-    t.a([s("function"), s("method")], palette.yellow());
+    t.a([s("function"), s("method")], p.yellow);
 
     t.a(
         [s("type"), s("class"), s("struct"), s("union"), s("typeAlias"), s("builtinType")],
-        palette.purple(),
+        p.purple,
     );
-    t.a([s("interface")], palette.pale_blue());
-    t.a([s("typeParameter")], palette.orange());
+    t.a([s("interface")], p.pale_blue);
+    t.a([s("typeParameter")], p.orange);
 
-    t.a([s("enum")], palette.sky_blue());
-    t.a([s("enumMember")], palette.dark_sky_blue());
+    t.a([s("enum")], p.sky_blue);
+    t.a([s("enumMember")], p.dark_sky_blue);
 
-    t.a([s("macro"), s("attribute"), s("*.attribute")], palette.teal());
+    t.a([s("macro"), s("attribute"), s("*.attribute")], p.teal);
 
-    t.a([s("lifetime")], palette.olive());
+    t.a([s("lifetime")], p.olive);
 
-    t.a([s("string")], palette.green());
+    t.a([s("string")], p.green);
 
-    t.a([s("escapeSequence"), s("formatSpecifier")], palette.olive());
+    t.a([s("escapeSequence"), s("formatSpecifier")], p.olive);
 
-    t.a([s("property")], palette.dark_blue());
+    t.a([s("property")], p.dark_blue);
 
-    t.a([s("number"), s("boolean"), s("characterLiteral")], palette.orange());
-    t.a([s("*.constant"), s("variable.static"), s("constParameter")], palette.dark_orange());
+    t.a([s("number"), s("boolean"), s("characterLiteral")], p.orange);
+    t.a([s("*.constant"), s("variable.static"), s("constParameter")], p.dark_orange);
 
-    t.a([s("unresolvedReference")], palette.red());
+    t.a([s("unresolvedReference")], p.red);
 
-    t.a([s("*.unsafe")], (palette.red(), FontStyle::Bold));
+    t.a([s("*.unsafe")], (p.red, FontStyle::Bold));
 
-    t.a([s("comment")], palette.base(BaseScale::BrightFg));
+    t.a([s("comment")], p.bright_fg);
 
-    t.a([tm("markup.heading")], palette.base(BaseScale::BrightFg));
+    t.a([tm("markup.heading")], p.bright_fg);
 }

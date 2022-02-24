@@ -1,107 +1,73 @@
+use once_cell::sync::OnceCell;
 use std::ops::Range;
 use tincture::Oklch;
 
-pub(crate) struct Palette;
+static PALETTE: OnceCell<Palette> = OnceCell::new();
+
+pub(crate) struct Palette {
+    pub(crate) bg: (u8, u8, u8),
+    pub(crate) light_bg: (u8, u8, u8),
+    pub(crate) lighter_bg: (u8, u8, u8),
+    pub(crate) dark_fg: (u8, u8, u8),
+    pub(crate) fg: (u8, u8, u8),
+    pub(crate) bright_fg: (u8, u8, u8),
+    pub(crate) red: (u8, u8, u8),
+    pub(crate) orange: (u8, u8, u8),
+    pub(crate) dark_orange: (u8, u8, u8),
+    pub(crate) yellow: (u8, u8, u8),
+    pub(crate) olive: (u8, u8, u8),
+    pub(crate) green: (u8, u8, u8),
+    pub(crate) teal: (u8, u8, u8),
+    pub(crate) sky_blue: (u8, u8, u8),
+    pub(crate) dark_sky_blue: (u8, u8, u8),
+    pub(crate) blue: (u8, u8, u8),
+    pub(crate) dark_blue: (u8, u8, u8),
+    pub(crate) pale_blue: (u8, u8, u8),
+    pub(crate) purple: (u8, u8, u8),
+}
 
 impl Palette {
-    pub(crate) fn base(&self, scale: BaseScale) -> (u8, u8, u8) {
-        oklch(scale.lightness(), scale.chroma(), 100.0)
-    }
-
-    const DARK_LIGHTNESS: f32 = 0.62;
-    const MEDIUM_LIGHTNESS: f32 = 0.72;
-    const BRIGHT_LIGHTNESS: f32 = 0.78;
-    const VERY_BRIGHT_LIGHTNESS: f32 = 0.96;
-
-    const VERY_LOW_CHROMA: f32 = 0.0325;
-    const LOW_CHROMA: f32 = 0.04;
-    const MEDIUM_CHROMA: f32 = 0.06;
-    const HIGH_CHROMA: f32 = 0.13;
-    const VERY_HIGH_CHROMA: f32 = 0.156;
-
-    pub(crate) fn red(&self) -> (u8, u8, u8) {
-        oklch(Self::DARK_LIGHTNESS, Self::HIGH_CHROMA, 25.0)
-    }
-
-    pub(crate) fn orange(&self) -> (u8, u8, u8) {
-        oklch(Self::BRIGHT_LIGHTNESS, Self::VERY_HIGH_CHROMA, 60.0)
-    }
-
-    pub(crate) fn dark_orange(&self) -> (u8, u8, u8) {
-        oklch(Self::MEDIUM_LIGHTNESS, Self::HIGH_CHROMA, 60.0)
-    }
-
-    pub(crate) fn yellow(&self) -> (u8, u8, u8) {
-        oklch(Self::VERY_BRIGHT_LIGHTNESS, Self::MEDIUM_CHROMA, 100.0)
-    }
-
-    pub(crate) fn olive(&self) -> (u8, u8, u8) {
-        oklch(Self::DARK_LIGHTNESS, Self::HIGH_CHROMA, 120.0)
-    }
-
-    pub(crate) fn green(&self) -> (u8, u8, u8) {
-        oklch(Self::DARK_LIGHTNESS, Self::MEDIUM_CHROMA, 140.0)
-    }
-
-    pub(crate) fn teal(&self) -> (u8, u8, u8) {
-        oklch(Self::DARK_LIGHTNESS, Self::LOW_CHROMA, 200.0)
-    }
-
-    pub(crate) fn sky_blue(&self) -> (u8, u8, u8) {
-        oklch(Self::MEDIUM_LIGHTNESS, Self::VERY_LOW_CHROMA, 220.0)
-    }
-
-    pub(crate) fn dark_sky_blue(&self) -> (u8, u8, u8) {
-        oklch(Self::DARK_LIGHTNESS, Self::VERY_LOW_CHROMA, 220.0)
-    }
-
-    pub(crate) fn blue(&self) -> (u8, u8, u8) {
-        oklch(Self::MEDIUM_LIGHTNESS, Self::MEDIUM_CHROMA, 250.0)
-    }
-
-    pub(crate) fn dark_blue(&self) -> (u8, u8, u8) {
-        oklch(Self::DARK_LIGHTNESS, Self::MEDIUM_CHROMA, 250.0)
-    }
-
-    pub(crate) fn pale_blue(&self) -> (u8, u8, u8) {
-        oklch(Self::MEDIUM_LIGHTNESS, Self::VERY_LOW_CHROMA, 250.0)
-    }
-
-    pub(crate) fn purple(&self) -> (u8, u8, u8) {
-        oklch(Self::DARK_LIGHTNESS, Self::LOW_CHROMA, 265.0)
+    pub(crate) fn new() -> &'static Self {
+        PALETTE.get_or_init(|| Palette {
+            bg: base(0.0),
+            light_bg: base(0.03),
+            lighter_bg: base(0.15),
+            dark_fg: base(0.3),
+            fg: base(0.75),
+            bright_fg: base(1.0),
+            red: oklch(DARK_LIGHTNESS, HIGH_CHROMA, 25.0),
+            orange: oklch(BRIGHT_LIGHTNESS, VERY_HIGH_CHROMA, 60.0),
+            dark_orange: oklch(MEDIUM_LIGHTNESS, HIGH_CHROMA, 60.0),
+            yellow: oklch(VERY_BRIGHT_LIGHTNESS, MEDIUM_CHROMA, 100.0),
+            olive: oklch(DARK_LIGHTNESS, HIGH_CHROMA, 120.0),
+            green: oklch(DARK_LIGHTNESS, MEDIUM_CHROMA, 140.0),
+            teal: oklch(DARK_LIGHTNESS, LOW_CHROMA, 200.0),
+            sky_blue: oklch(MEDIUM_LIGHTNESS, VERY_LOW_CHROMA, 220.0),
+            dark_sky_blue: oklch(DARK_LIGHTNESS, VERY_LOW_CHROMA, 220.0),
+            blue: oklch(MEDIUM_LIGHTNESS, MEDIUM_CHROMA, 250.0),
+            dark_blue: oklch(DARK_LIGHTNESS, MEDIUM_CHROMA, 250.0),
+            pale_blue: oklch(MEDIUM_LIGHTNESS, VERY_LOW_CHROMA, 250.0),
+            purple: oklch(DARK_LIGHTNESS, LOW_CHROMA, 265.0),
+        })
     }
 }
 
-#[derive(Debug, Clone, Copy)]
-pub(crate) enum BaseScale {
-    Bg,
-    LightBg,
-    LighterBg,
-    DarkFg,
-    Fg,
-    BrightFg,
+fn base(value: f32) -> (u8, u8, u8) {
+    let lightness = lerp(value, 0.24..0.98);
+    let chroma = lerp(value, 0.0..0.029);
+    oklch(lightness, chroma, 100.0)
 }
 
-impl BaseScale {
-    fn lightness(self) -> f32 {
-        lerp(self.value(), 0.24..0.98)
-    }
+const DARK_LIGHTNESS: f32 = 0.62;
+const MEDIUM_LIGHTNESS: f32 = 0.72;
+const BRIGHT_LIGHTNESS: f32 = 0.78;
+const VERY_BRIGHT_LIGHTNESS: f32 = 0.96;
 
-    fn chroma(self) -> f32 {
-        lerp(self.value(), 0.0..0.029)
-    }
-
-    fn value(self) -> f32 {
-        match self {
-            Self::Bg => 0.0,
-            Self::LightBg => 0.03,
-            Self::LighterBg => 0.15,
-            Self::DarkFg => 0.3,
-            Self::Fg => 0.75,
-            Self::BrightFg => 1.0,
-        }
-    }
-}
+const VERY_LOW_CHROMA: f32 = 0.0325;
+const LOW_CHROMA: f32 = 0.04;
+const MEDIUM_CHROMA: f32 = 0.06;
+const HIGH_CHROMA: f32 = 0.13;
+const VERY_HIGH_CHROMA: f32 = 0.156;
 
 fn oklch(l: f32, c: f32, h: f32) -> (u8, u8, u8) {
     let oklch = Oklch { l, c, h: h.to_radians() };
