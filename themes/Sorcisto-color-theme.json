@@ -14,18 +14,15 @@
     "semanticHighlighting": true,
     "semanticTokenColors": {
         "keyword": {
+            "foreground": "#7A869F"
+        },
+        "builtinType": {
+            "foreground": "#7A869F"
+        },
+        "keyword.controlFlow": {
             "foreground": "#88A8C9"
         },
-        "operator": {
-            "foreground": "#88A8C9"
-        },
-        "arithmetic": {
-            "foreground": "#88A8C9"
-        },
-        "logical": {
-            "foreground": "#88A8C9"
-        },
-        "bitwise": {
+        "selfKeyword": {
             "foreground": "#88A8C9"
         },
         "function": {
@@ -35,34 +32,28 @@
             "foreground": "#FBF4C5"
         },
         "type": {
-            "foreground": "#7A869F"
+            "foreground": "#8FAAB3"
         },
         "class": {
-            "foreground": "#7A869F"
+            "foreground": "#8FAAB3"
         },
         "struct": {
-            "foreground": "#7A869F"
-        },
-        "union": {
-            "foreground": "#7A869F"
-        },
-        "typeAlias": {
-            "foreground": "#7A869F"
-        },
-        "builtinType": {
-            "foreground": "#7A869F"
-        },
-        "interface": {
-            "foreground": "#96A7B9"
-        },
-        "typeParameter": {
-            "foreground": "#FF9C40"
+            "foreground": "#8FAAB3"
         },
         "enum": {
             "foreground": "#8FAAB3"
         },
-        "enumMember": {
-            "foreground": "#718B94"
+        "union": {
+            "foreground": "#8FAAB3"
+        },
+        "typeAlias": {
+            "foreground": "#8FAAB3"
+        },
+        "interface": {
+            "foreground": "#8FAAB3"
+        },
+        "typeParameter": {
+            "foreground": "#8FAAB3"
         },
         "macro": {
             "foreground": "#6A8E90"
@@ -94,7 +85,7 @@
         "boolean": {
             "foreground": "#FF9C40"
         },
-        "characterLiteral": {
+        "character": {
             "foreground": "#FF9C40"
         },
         "*.constant": {

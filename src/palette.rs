@@ -19,10 +19,8 @@ pub(crate) struct Palette {
     pub(crate) green: (u8, u8, u8),
     pub(crate) teal: (u8, u8, u8),
     pub(crate) sky_blue: (u8, u8, u8),
-    pub(crate) dark_sky_blue: (u8, u8, u8),
     pub(crate) blue: (u8, u8, u8),
     pub(crate) dark_blue: (u8, u8, u8),
-    pub(crate) pale_blue: (u8, u8, u8),
     pub(crate) purple: (u8, u8, u8),
 }
 
@@ -43,10 +41,8 @@ impl Palette {
             green: oklch(DARK_LIGHTNESS, MEDIUM_CHROMA, 140.0),
             teal: oklch(DARK_LIGHTNESS, LOW_CHROMA, 200.0),
             sky_blue: oklch(MEDIUM_LIGHTNESS, VERY_LOW_CHROMA, 220.0),
-            dark_sky_blue: oklch(DARK_LIGHTNESS, VERY_LOW_CHROMA, 220.0),
             blue: oklch(MEDIUM_LIGHTNESS, MEDIUM_CHROMA, 250.0),
             dark_blue: oklch(DARK_LIGHTNESS, MEDIUM_CHROMA, 250.0),
-            pale_blue: oklch(MEDIUM_LIGHTNESS, VERY_LOW_CHROMA, 250.0),
             purple: oklch(DARK_LIGHTNESS, LOW_CHROMA, 265.0),
         })
     }

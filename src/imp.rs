@@ -26,19 +26,24 @@ fn workspace_colors(t: &mut ThemeBuilder, p: &Palette) {
 }
 
 fn syntax_highlighting(t: &mut ThemeBuilder, p: &Palette) {
-    t.a([s("keyword"), s("operator"), s("arithmetic"), s("logical"), s("bitwise")], p.blue);
+    t.a([s("keyword"), s("builtinType")], p.purple);
+    t.a([s("keyword.controlFlow"), s("selfKeyword")], p.blue);
 
     t.a([s("function"), s("method")], p.yellow);
 
     t.a(
-        [s("type"), s("class"), s("struct"), s("union"), s("typeAlias"), s("builtinType")],
-        p.purple,
+        [
+            s("type"),
+            s("class"),
+            s("struct"),
+            s("enum"),
+            s("union"),
+            s("typeAlias"),
+            s("interface"),
+            s("typeParameter"),
+        ],
+        p.sky_blue,
     );
-    t.a([s("interface")], p.pale_blue);
-    t.a([s("typeParameter")], p.orange);
-
-    t.a([s("enum")], p.sky_blue);
-    t.a([s("enumMember")], p.dark_sky_blue);
 
     t.a([s("macro"), s("attribute"), s("*.attribute")], p.teal);
 
@@ -50,7 +55,7 @@ fn syntax_highlighting(t: &mut ThemeBuilder, p: &Palette) {
 
     t.a([s("property")], p.dark_blue);
 
-    t.a([s("number"), s("boolean"), s("characterLiteral")], p.orange);
+    t.a([s("number"), s("boolean"), s("character")], p.orange);
     t.a([s("*.constant"), s("variable.static"), s("constParameter")], p.dark_orange);
 
     t.a([s("unresolvedReference")], p.red);
