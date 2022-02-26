@@ -58,10 +58,7 @@
         "macro": {
             "foreground": "#6A8E90"
         },
-        "attribute": {
-            "foreground": "#6A8E90"
-        },
-        "*.attribute": {
+        "derive": {
             "foreground": "#6A8E90"
         },
         "lifetime": {
