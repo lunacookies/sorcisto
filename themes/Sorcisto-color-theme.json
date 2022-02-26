@@ -7,7 +7,7 @@
                 "markup.heading"
             ],
             "settings": {
-                "foreground": "#FDF9E3"
+                "foreground": "#FBF9EA"
             }
         }
     ],
@@ -108,20 +108,20 @@
             "bold": true
         },
         "comment": {
-            "foreground": "#FDF9E3"
+            "foreground": "#FBF9EA"
         }
     },
     "colors": {
         "editor.background": "#1F1F1F",
-        "editor.foreground": "#BFBDAD",
-        "foreground": "#BFBDAD",
+        "editor.foreground": "#CAC8BD",
+        "foreground": "#CAC8BD",
         "editor.lineHighlightBackground": "#252424",
-        "statusBar.background": "#3B3B38",
-        "statusBar.debuggingBackground": "#3B3B38",
-        "statusBar.noFolderBackground": "#3B3B38",
-        "statusBar.foreground": "#BFBDAD",
-        "editor.selectionBackground": "#3B3B38",
-        "editorCodeLens.foreground": "#5A5953",
-        "rust_analyzer.inlayHints.foreground": "#5A5953"
+        "statusBar.background": "#3B3B39",
+        "statusBar.debuggingBackground": "#3B3B39",
+        "statusBar.noFolderBackground": "#3B3B39",
+        "statusBar.foreground": "#CAC8BD",
+        "editor.selectionBackground": "#3B3B39",
+        "editorCodeLens.foreground": "#595955",
+        "rust_analyzer.inlayHints.foreground": "#595955"
     }
 }

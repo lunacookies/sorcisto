@@ -31,7 +31,7 @@ impl Palette {
             light_bg: base(0.03),
             lighter_bg: base(0.15),
             dark_fg: base(0.3),
-            fg: base(0.75),
+            fg: base(0.8),
             bright_fg: base(1.0),
             red: oklch(DARK_LIGHTNESS, HIGH_CHROMA, 25.0),
             orange: oklch(BRIGHT_LIGHTNESS, VERY_HIGH_CHROMA, 60.0),
@@ -50,7 +50,7 @@ impl Palette {
 
 fn base(value: f32) -> (u8, u8, u8) {
     let lightness = lerp(value, 0.24..0.98);
-    let chroma = lerp(value, 0.0..0.029);
+    let chroma = lerp(value, 0.0..0.02);
     oklch(lightness, chroma, 100.0)
 }
 
