@@ -42,7 +42,7 @@ impl Palette {
             teal: oklch(DARK_LIGHTNESS, LOW_CHROMA, 200.0),
             sky_blue: oklch(MEDIUM_LIGHTNESS, VERY_LOW_CHROMA, 220.0),
             blue: oklch(MEDIUM_LIGHTNESS, MEDIUM_CHROMA, 250.0),
-            dark_blue: oklch(DARK_LIGHTNESS, MEDIUM_CHROMA, 250.0),
+            dark_blue: oklch(DARK_LIGHTNESS, LOW_CHROMA, 240.0),
             purple: oklch(DARK_LIGHTNESS, LOW_CHROMA, 265.0),
         })
     }

@@ -77,7 +77,10 @@
             "foreground": "#7C9128"
         },
         "property": {
-            "foreground": "#6B89A9"
+            "foreground": "#718A9C"
+        },
+        "enumMember": {
+            "foreground": "#718A9C"
         },
         "number": {
             "foreground": "#FF9C40"

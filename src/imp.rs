@@ -53,7 +53,7 @@ fn syntax_highlighting(t: &mut ThemeBuilder, p: &Palette) {
 
     t.a([s("escapeSequence"), s("formatSpecifier")], p.olive);
 
-    t.a([s("property")], p.dark_blue);
+    t.a([s("property"), s("enumMember")], p.dark_blue);
 
     t.a([s("number"), s("boolean"), s("character")], p.orange);
     t.a([s("variable.constant"), s("variable.static"), s("constParameter")], p.dark_orange);
