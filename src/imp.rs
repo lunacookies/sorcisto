@@ -56,7 +56,7 @@ fn syntax_highlighting(t: &mut ThemeBuilder, p: &Palette) {
     t.a([s("property")], p.dark_blue);
 
     t.a([s("number"), s("boolean"), s("character")], p.orange);
-    t.a([s("*.constant"), s("variable.static"), s("constParameter")], p.dark_orange);
+    t.a([s("variable.constant"), s("variable.static"), s("constParameter")], p.dark_orange);
 
     t.a([s("unresolvedReference")], p.red);
 

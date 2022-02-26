@@ -88,7 +88,7 @@
         "character": {
             "foreground": "#FF9C40"
         },
-        "*.constant": {
+        "variable.constant": {
             "foreground": "#DF8F48"
         },
         "variable.static": {
