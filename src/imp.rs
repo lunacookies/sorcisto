@@ -47,7 +47,7 @@ fn syntax_highlighting(t: &mut ThemeBuilder, p: &Palette) {
 
     t.a([s("macro"), s("derive")], p.teal);
 
-    t.a([s("lifetime")], p.olive);
+    t.a([s("lifetime"), s("attribute")], p.olive);
 
     t.a([s("string")], p.green);
 

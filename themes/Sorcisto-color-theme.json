@@ -64,6 +64,9 @@
         "lifetime": {
             "foreground": "#7C9128"
         },
+        "attribute": {
+            "foreground": "#7C9128"
+        },
         "string": {
             "foreground": "#738F6D"
         },
